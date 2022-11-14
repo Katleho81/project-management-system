@@ -1,0 +1,10 @@
+type Employee @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  first_name: String!
+  last_name: String!
+  username: String!
+  password: AWSEmail!
+  role: String
+  capacity: Int
+  line_manager: String
+}
